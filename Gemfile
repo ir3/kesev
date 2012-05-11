@@ -27,10 +27,15 @@ end
 
 gem 'jquery-rails'
 gem 'devise'
-
+gem 'rails3_acts_as_paranoid'
 
 # To use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.0.0'
+gem 'bcrypt-ruby', '~> 3.0.0'
+
+group :development, :test do
+  gem 'rspec-rails'
+  gem 'factory_girl_rails'
+end
 
 # To use Jbuilder templates for JSON
 # gem 'jbuilder'

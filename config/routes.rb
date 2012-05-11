@@ -4,7 +4,9 @@ Kesev::Application.routes.draw do
 
   devise_for :users
 
-  root :to => 'home#index'
+  root :to => 'welcome#index'
+
+  get 'homes', :to => 'home#index', :as => :user_root
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

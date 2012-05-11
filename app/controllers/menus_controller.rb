@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
-class HomeController < ApplicationController
+class MenusController < ApplicationController
   before_filter :authenticate_user!
-
   def index
   end
+
 end

@@ -1,5 +1,5 @@
 <div class="topmanu">
   <span class="suru"><%= link_to 'Menu', '/' %></span>
   <span class="sakuhin"><%= link_to '関係先一覧', '/' %></span>
-  <span class="sakuhin"><%= link_to 'サインアウト', '/' %></span>
+  <span class="sakuhin"> <%= link_to('サインアウト', destroy_user_session_path) if current_user %> </span>
 </div>
